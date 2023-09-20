@@ -1,0 +1,29 @@
+.common--button{
+    background: transparent;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1.5rem;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: var(--main--red--color);
+    font-size: 1.1rem;
+    animation: ButtonAnimation 0.75s linear;
+    transition: 0.35s ease-in-out;
+}
+.common--button:hover{
+    background: var(--main--pale--color);
+}
+
+@keyframes ButtonAnimation{
+    from{
+        opacity: 0;
+        color: transparent;
+        background: transparent;
+
+    }
+    to{
+        opacity: 1;
+        color: var(--main--red--color);
+        background: transparent;
+    }
+}

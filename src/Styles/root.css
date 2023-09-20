@@ -1,0 +1,78 @@
+@import "./_variables.css";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Sora', sans-serif;
+  font-weight: 300;
+}
+button{
+  background: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+.multiple-clocks-page--wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 3.5rem;
+  gap: 3.5rem;
+}
+.multiple-clocks-page--title--wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.multiple-clocks-page--button--wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding:3rem 0;
+}
+.multiple-clocks-page--clock--wrapper{
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.multiple-clocks-page--time--display--wrapper.progress-value,.multiple-clocks-page--time--display--wrapper .progress-value{
+  color: var(--main--dark--color);
+}
+.clock--wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:0.5rem;
+}
+.common--button.special--add--button{
+  background: var(--main--light-red--color);
+  animation: AddButtonAnimation 0.75s linear;
+
+}
+.common--button.special--add--button div{
+  animation: AddButtonAnimation 0.75s linear;
+  transition: 0.35s ease-in-out;
+  font-weight: 500!important;
+  color: var(--main--light--color)!important;
+}
+
+@keyframes AddButtonAnimation{
+  from{
+      opacity: 0;
+      color: transparent;
+      background: transparent;
+
+  }
+  to{
+      opacity: 1;
+      color: var(--main--light--color);
+      background: var(--main--light-red--color);
+  }
+}
